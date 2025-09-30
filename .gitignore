@@ -1,0 +1,8 @@
+# Terraform State Files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform.tfstate*
+
+# Terraform Cache Directory
+.terraform/
