@@ -5,6 +5,7 @@
 Imported existing AWS infrastructure into Terraform management using Infrastructure as Code principles. Successfully brought 29 AWS resources under Terraform control.
 
 ## Project Structure
+```
 Konecta-OneScript-Repsol/
 ├── images/ # Screenshots and documentation images
 ├── modules/
@@ -17,6 +18,8 @@ Konecta-OneScript-Repsol/
 ├── outputs.tf # Outputs
 ├── .terraform.lock.hcl # Provider versions
 └── README.md # This file
+```
+
 ## Resources Imported (29 Total)
 
 **VPC Module (20 resources)**
@@ -30,7 +33,7 @@ Konecta-OneScript-Repsol/
 - 2 DB Instances (Writer + Reader), 1 DB Subnet Group
 
 **Security Groups Module (2 resources)**
-- 1 Application Security Group, 1 RDS Security Group
+- 1 General Security Group (prueba), 1 RDS Security Group (rds_repsol_sg)
 
 **IAM Module (3 resources)**
 - 1 Trend Micro Role, 1 Elastic Beanstalk Role, 1 RDS Monitoring Role
