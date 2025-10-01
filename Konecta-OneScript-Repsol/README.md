@@ -7,16 +7,29 @@ Imported existing AWS infrastructure into Terraform management using Infrastruct
 ## Project Structure
 ```
 Konecta-OneScript-Repsol/
-├── images/ # Screenshots and documentation images
+├── images/              
 ├── modules/
-│ ├── vpc/ # Network infrastructure (20 resources)
-│ ├── rds/ # Database resources (4 resources)
-│ ├── security_groups/ # Security configurations (2 resources)
-│ └── iam/ # Service roles (3 resources)
-├── main.tf # Root configuration
-├── variables.tf # Input variables
-├── outputs.tf # Outputs
-├── .terraform.lock.hcl # Provider versions
+│   ├── vpc/                
+│   │   ├── vpc.tf          
+│   │   ├── variables.tf   
+│   │   ├── outputs.tf      
+│   ├── rds/                
+│   │   ├── rds.tf         
+│   │   ├── variables.tf    
+│   │   └── outputs.tf      
+│   ├── security_groups/    
+│   │   ├── security_groups.tf         
+│   │   ├── variables.tf    
+│   │   └── outputs.tf     
+│   └── iam/                
+│       ├── iam_roles.tf    
+│       ├── variables.tf    
+│       └── outputs.tf      
+├── main.tf
+├── providers.tf 
+├── variables.tf
+├── terraform.auto.tfvars 
+├── .terraform.lock.hcl 
 └── README.md # This file
 ```
 
